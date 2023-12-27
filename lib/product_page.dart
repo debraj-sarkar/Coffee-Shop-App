@@ -9,32 +9,41 @@ class ProductPages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(95, 50, 55, 1),
+      backgroundColor: const Color.fromRGBO(100, 50, 55, 1),
       //AppBar
       appBar: AppBar(
         elevation: 0,
         title: const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.location_on_outlined),
+            Icon(
+              Icons.location_on_outlined,
+              color: Colors.white,
+            ),
             SizedBox(width: 2),
             Text(
               'KOLKATA,IND',
-              style: TextStyle(fontSize: 15),
+              style: TextStyle(fontSize: 15, color: Colors.white),
             ),
           ],
         ),
         leading: const Padding(
           padding: EdgeInsets.all(15.0),
-          child: Icon(Icons.account_circle_outlined),
+          child: Icon(
+            Icons.account_circle_outlined,
+            color: Colors.white,
+          ),
         ),
         actions: const [
           Padding(
             padding: EdgeInsets.all(15.0),
-            child: Icon(Icons.circle_notifications_outlined),
+            child: Icon(
+              Icons.circle_notifications_outlined,
+              color: Colors.white,
+            ),
           )
         ],
-        backgroundColor: const Color.fromRGBO(160, 66, 18, 255),
+        backgroundColor: const Color.fromRGBO(100, 50, 55, 1),
       ),
 
       //Greeting Text
@@ -165,7 +174,7 @@ class ProductPages extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: const GNav(
-        haptic: true,
+        haptic: false,
         tabBorderRadius: 20,
         activeColor: Colors.black54,
         gap: 8,
