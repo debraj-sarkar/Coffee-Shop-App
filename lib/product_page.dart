@@ -9,7 +9,7 @@ class ProductPages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(100, 50, 55, 1),
+      backgroundColor: const Color.fromRGBO(180, 60, 60, 100),
       //AppBar
       appBar: AppBar(
         elevation: 0,
@@ -43,7 +43,7 @@ class ProductPages extends StatelessWidget {
             ),
           )
         ],
-        backgroundColor: const Color.fromRGBO(100, 50, 55, 1),
+        backgroundColor: const Color.fromRGBO(180, 60, 60, 100),
       ),
 
       //Greeting Text
